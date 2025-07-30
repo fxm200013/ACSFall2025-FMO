@@ -2,24 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Fluc 3D Viewer</title>
+  <title>Fluc</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
     body {
       margin: 0;
       background-color: #fff;
     }
-    iframe {
+    model-viewer {
       width: 100vw;
       height: 100vh;
-      border: none;
     }
   </style>
 </head>
 <body>
 
-  <iframe src="https://gltf-viewer.donmccurdy.com/?url=https://github.com/fxm200013/ACSFall2025-FMO/raw/main/Setup/Double-bilayer-ACS.glb"
-          title="3D Model Viewer">
-  </iframe>
+  <model-viewer 
+    src="Setup/Double-bilayer-ACS.glb" 
+    alt="Fluc"
+    auto-rotate 
+    camera-controls
+    shadow-intensity="1">
+  </model-viewer>
 
 </body>
 </html>
